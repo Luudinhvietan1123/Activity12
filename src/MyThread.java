@@ -3,7 +3,6 @@ public class MyThread implements Runnable{
 
     public Thread t;
     public String name;
-    public int sleep;
 
     public MyThread(String threadName, int timeSleep) throws InterruptedException {
         name = threadName;
@@ -32,5 +31,7 @@ public class MyThread implements Runnable{
 
     public void run(){
         System.out.println(name);
+        while (true){
+        }
     }
 }
